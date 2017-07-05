@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<activity.xz.com.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <activity.xz.com.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="潘老爷微信"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="23dp"
+            android:src="@drawable/ic_launcher" />
+    </activity.xz.com.autolayout.AutoLinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+    </android.support.v4.view.ViewPager>
+
+    <activity.xz.com.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <activity.xz.com.autolayout.AutoLinearLayout
+            android:id="@+id/weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/weixin_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/weixin_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@drawable/weixin_text_selector"
+                android:textSize="12sp" />
+        </activity.xz.com.autolayout.AutoLinearLayout>
+
+        <activity.xz.com.autolayout.AutoLinearLayout
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/contact_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/contact_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="通讯录"
+                android:textColor="@drawable/weixin_text_selector"
+                android:textSize="12sp" />
+        </activity.xz.com.autolayout.AutoLinearLayout>
+
+        <activity.xz.com.autolayout.AutoLinearLayout
+            android:id="@+id/find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/find_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/find_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@drawable/weixin_text_selector"
+                android:textSize="12sp" />
+        </activity.xz.com.autolayout.AutoLinearLayout>
+
+        <activity.xz.com.autolayout.AutoLinearLayout
+            android:id="@+id/self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/self_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/self_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我"
+                android:textColor="@drawable/weixin_text_selector"
+                android:textSize="12sp" />
+        </activity.xz.com.autolayout.AutoLinearLayout>
+    </activity.xz.com.autolayout.AutoLinearLayout>
+
+
+</activity.xz.com.autolayout.AutoLinearLayout>

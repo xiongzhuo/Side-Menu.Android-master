@@ -1,0 +1,1 @@
+include ':app', ':mylibrary', ':autolayout', ':titanic', ':context_menu'

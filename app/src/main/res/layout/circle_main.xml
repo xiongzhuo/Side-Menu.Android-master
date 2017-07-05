@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<activity.xz.com.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="demo相关文章网址" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/0325/1603.html" />
+
+    <activity.xz.com.side_menuandroid_master.view.CircleBar
+        android:id="@+id/circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:clickable="true" />
+
+</activity.xz.com.autolayout.AutoLinearLayout>

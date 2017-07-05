@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string"></attr>
+    <attr name="titleColor" format="color"></attr>
+    <attr name="titileTextSize" format="integer"></attr>
+    <attr name="image" format="reference"></attr>
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0"></enum>
+        <enum name="center" value="1"></enum>
+    </attr>
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText"></attr>
+        <attr name="titleColor"></attr>
+        <attr name="titileTextSize"></attr>
+        <attr name="image"></attr>
+        <attr name="imageScaleType"></attr>
+    </declare-styleable>
+    <!-- 一定要引入 xmlns:custom="http://schemas.android.com/apk/res/com.example.customview01"我们的命名空间，后面的包路径指的是项目的package-->
+</resources>
