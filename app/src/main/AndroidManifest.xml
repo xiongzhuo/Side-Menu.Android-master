@@ -30,6 +30,11 @@
         <activity android:name=".activity.TextInputLayoutActivity"></activity>
         <activity android:name=".activity.MainTabActivity"></activity>
         <activity android:name=".activity.RecyclerActivity"></activity>
+        <activity android:name=".activity.RunningTextViewDemoActivity"></activity>
+        <activity android:name=".activity.ViewAcitivity"></activity>
+        <activity android:name=".activity.ExpandableTextViewDemoActivity"></activity>
+        <activity android:name=".activity.PieChartViewDemoActivity"></activity>
+        <activity android:name=".activity.PowerfulEditTextDemoActivity"></activity>
     </application>
 
 </manifest>

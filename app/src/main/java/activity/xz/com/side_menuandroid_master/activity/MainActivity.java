@@ -25,6 +25,9 @@ import activity.xz.com.side_menuandroid_master.R;
 import activity.xz.com.side_menuandroid_master.fragment.ContentFragment;
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
+import rx.Observable;
+import rx.Observer;
+import rx.Subscriber;
 
 
 public class MainActivity extends AppCompatActivity implements ViewAnimator.ViewAnimatorListener {
@@ -59,6 +62,32 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
         setActionBar();
         createMenuList();
         viewAnimator = new ViewAnimator(this, list, contentFragment, drawerLayout, this);
+//        Observer<String> observer = new Observer<String>() {
+//            @Override
+//            public void onCompleted() {
+//
+//            }
+//
+//            @Override
+//            public void onError(Throwable e) {
+//
+//            }
+//
+//            @Override
+//            public void onNext(String s) {
+//
+//            }
+//        };
+//        Observable observer1 = Observable.create(new Observable.OnSubscribe<String>() {
+//            @Override
+//            public void call(Subscriber<? super String> subscriber) {
+//                subscriber.onNext("Hello");
+//                subscriber.onNext("Wrold");
+//                subscriber.onCompleted();
+//            }
+//        });
+////        订阅
+//        observer1.subscribe(observer);
     }
 
     private void createMenuList() {

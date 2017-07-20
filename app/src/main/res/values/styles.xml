@@ -4,5 +4,4 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorAccent">#3498db</item>
     </style>
-
 </resources>

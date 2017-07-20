@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parent>
+
+    <total>33</total>
+
+
+    <list>
+        <user>
+
+            <id>1</id>
+
+            <userName>张三</userName>
+
+            <email>zhangsan@xxx.com</email>
+
+        </user>
+        <user id="2">
+
+            <userName>李四</userName>
+
+            <email>lisi@xxx.com</email>
+
+        </user>
+
+        <user id="3" userName="王五">
+
+            <email>wangwu@xxx.com</email>
+
+        </user>
+
+    </list>
+
+</parent>

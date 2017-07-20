@@ -17,7 +17,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -46,4 +47,9 @@ dependencies {
     //fastjson的依赖
     compile 'com.alibaba:fastjson:1.2.21'
     compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/xstream-1.4.7.jar')
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.github.chaychan:PowerfulViewLibrary:1.2.1'
 }

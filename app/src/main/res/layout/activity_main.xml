@@ -28,7 +28,10 @@
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
             android:background="?attr/colorPrimary"/>
-
+        <activity.xz.com.side_menuandroid_master.view.MyView
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
     </io.codetail.widget.RevealFrameLayout>
 
     <ScrollView

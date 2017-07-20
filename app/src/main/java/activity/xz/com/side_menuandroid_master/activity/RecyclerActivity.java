@@ -18,6 +18,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,16 +27,16 @@ import activity.xz.com.side_menuandroid_master.R;
 
 import static com.alibaba.fastjson.JSON.parseArray;
 
-import activity.xz.com.side_menuandroid_master.adapter.MyPaddingDecoration;
 import activity.xz.com.side_menuandroid_master.adapter.MyRvAdapter;
 import activity.xz.com.side_menuandroid_master.adapter.SectionDecoration;
 import activity.xz.com.side_menuandroid_master.bean.NameBean;
 import activity.xz.com.side_menuandroid_master.bean.WaitMVBean;
 import activity.xz.com.side_menuandroid_master.lister.HidingScrollListener;
+import activity.xz.com.side_menuandroid_master.sj_mode.Product;
+import activity.xz.com.side_menuandroid_master.utils.PullParse;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import okhttp3.Call;
-import okhttp3.OkHttpClient;
 
 /**
  * Created by Administrator on 2017/7/4.
@@ -71,6 +73,26 @@ public class RecyclerActivity extends AppCompatActivity {
     }
 
     private void getDataFromNet() {
+        String fileName = "aa.xml";
+//        try {
+//            InputStream in = getResources().getAssets().open(fileName);
+//            XStream xStream = new XStream();
+////            xStream.processAnnotations(Product.class);
+//            xStream.alias( "root" , Product.class );
+//            Product bean = (Product) xStream.fromXML(in);//xml魏自己从网络上获取的xml字符串
+//            Log.d("xmlXStream", bean.result.get(0) + "" + bean.reason);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        PullParse pull = new PullParse();
+        try {
+            InputStream in = getResources().getAssets().open(fileName);
+            Product product = (Product) pull.getXmlObject(in, Product.class);
+            List<Product.User> user= product.user;
+            Log.d("xmlXStream", "product.reason" + product.total );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         OkHttpUtils.get().url(url).build().execute(new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
@@ -97,7 +119,8 @@ public class RecyclerActivity extends AppCompatActivity {
 
         String data = jsonObject.getString("data");
         JSONObject dataObj = JSON.parseObject(data);
-
+        String stid = dataObj.getString("stid");
+        Log.d("xmlXStream", "stid=" + stid);
         String coming = dataObj.getString("coming");
         List<WaitMVBean.DataBean.ComingBean> comingslist = parseArray(coming, WaitMVBean.DataBean.ComingBean.class);
 

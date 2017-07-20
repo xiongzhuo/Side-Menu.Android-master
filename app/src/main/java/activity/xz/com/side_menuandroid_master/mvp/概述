@@ -1,0 +1,9 @@
+一.Android开发安全性注意事项:
+ 数据库加密机制   greenDao基于Sqlcipher数据加密
+ 本地ShardPreferences保存信息要加密  AES加密http://blog.csdn.net/sbvfhp/article/details/37659847
+ 统一日志输出开关控制(开发测试日志输出打开，版本正式上线日志输入关闭）
+ 正式包需要混淆打包
+ app与服务器交互接口参数以及返回数据需要进行数据加密
+ app与服务器交互接口需要有Token过期失效机制
+ 声明适当的manifest权限
+

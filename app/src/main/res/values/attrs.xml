@@ -15,5 +15,4 @@
         <attr name="image"></attr>
         <attr name="imageScaleType"></attr>
     </declare-styleable>
-    <!-- 一定要引入 xmlns:custom="http://schemas.android.com/apk/res/com.example.customview01"我们的命名空间，后面的包路径指的是项目的package-->
 </resources>

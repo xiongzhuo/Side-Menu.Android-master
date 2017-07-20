@@ -3,7 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_gravity="center_horizontal"
+        android:text="分类侧滑菜单"
+        android:textSize="20px" />
     <Button
         android:id="@+id/btn_side_menu"
         android:layout_width="300px"
